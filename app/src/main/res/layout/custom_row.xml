@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginRight="5dip"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/store_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="8.67" />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_weight="8.67"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_weight="8.67"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="store_name"
+
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/store_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/store_name"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="store_address"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/store_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/store_address"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:text="store_city"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/store_phnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/store_address"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:text="store_phnum"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/store_workday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="store_workday"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/store_worktime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="store_worktime"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@null"
+            android:focusable="false"
+            android:background="#00000000"
+            android:focusableInTouchMode="false"
+            android:text="See Promo"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+
+
+</LinearLayout>
